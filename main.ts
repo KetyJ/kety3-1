@@ -28,14 +28,14 @@ basic.forever(function () {
         lineposition = 0
         emptyslot = randint(0, 4)
         linelight = []
-        for (let i = 0; i <= 4; i++) {
-            if (emptyslot != i) {
-                linelight.push(i)
+        for (let I = 0; I <= 4; I++) {
+            if (emptyslot != I) {
+                linelight.push(I)
             }
         }
     }
-    for (let J = 0; J <= 3; J++) {
-        led.plot(linelight[J], lineposition)
+    for (let j = 0; j <= 3; j++) {
+        led.plot(linelight[j], lineposition)
     }
     lineposition += 1
     led.plot(position, 4)
